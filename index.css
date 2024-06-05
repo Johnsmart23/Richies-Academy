@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#Riches{
+    background-image: linear-gradient(rgba(0,0,0,0.5),#555c5b), url("images/background.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+header{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    background-color: red;
+    padding: 10px;
+    color: white;
+}
+header h1{
+    font-size: 15px;
+    margin-left: 50px;
+}
+header ul {
+    list-style-type: none;
+    margin-left: 700px;
+}
+
+header ul li {
+    display: inline;
+    padding: 2px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.sale{
+    padding: 80px;
+    color: #fff;
+    padding-top: 180px;
+}
+.sale h1{
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form{
+    font-style: italic;
+    font-size: 20px;
+}
+.apply a{
+    width: 100px;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    margin: 0 5px;
+    border: 3px solid rgb(253, 12, 12);
+    position: relative;
+    text-align: center;
+ }
+.apply a span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+
+
+
+
+
+#container {
+    background-color: #000;
+    display: flex;
+    color: #fff;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    padding: 20px; /* Added padding for spacing */
+}
+
+/* Styling for the introductory text */
+.intro-text {
+    margin-right: 20px; /* Added margin-right to space out from the photos */
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Flex container for the photos to align them side-by-side */
+.photos {
+    display: flex;
+    gap: 20px; /* Added gap for spacing between photos */
+}
+
+/* Styling for each photo container */
+.photo {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Background image for the mentorship photo */
+.mentorship {
+    background-image: url("images/m1.jpg");
+}
+
+/* Background image for the trade signal photo */
+.trade-signal {
+    background-image: url("images/m3.jpg");
+}
+
+/* Styling for the text overlay on each photo */
+.text {
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: #fff;
+}
+.text a{
+    color: rgb(234, 8, 8);
+    text-decoration: none;
+}
+/* Hover effect for the text overlay */
+.text a:hover {
+    color: blue;
+}
