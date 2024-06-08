@@ -1,20 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const signupForm = document.getElementById('signupForm');
-    const loginForm = document.getElementById('loginForm');
+let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
 
-    if (signupForm) {
-        signupForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Sign Up form submitted!');
-            window.location.href = 'index.html';
-        });
+window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        // Scroll down
+        navbar.style.top = '-60px';
+    } else {
+        // Scroll up
+        navbar.style.top = '0';
     }
-
-    if (loginForm) {
-        loginForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Login form submitted!');
-            window.location.href = 'index.html';
-        });
-    }
+    lastScrollTop = scrollTop;
 });
