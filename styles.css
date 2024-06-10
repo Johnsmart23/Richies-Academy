@@ -1,67 +1,107 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+/*--Navbar--*/
+* {
     padding: 0;
-    background-color: #f4f4f4;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header, footer {
-    background-color: #d30e0e;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
+nav {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    background-color: white;
+    z-index: 1000;
+    transition: top 0.3s; /* Smooth toggle effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+    width: 70px;
+    padding-left: 100px;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1em;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #333;
+    color: red;
     text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s;
 }
 
-main {
-    padding: 1em;
+nav ul li a:hover {
+    color: blue;
+}
+/*--Contacts---*/
+#Contact {
+    padding: 100px 0 20px;
+    background: #efefef;
+    position: relative;
+    color: #000;
+}
+
+.Contact-row {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title-text {
+    margin-left: 130px;
+}
+
+.title-text a {
+    text-decoration: none;
+    color: blue;
+    padding: 5px;
+}
+
+.title-text a:hover {
+    color: red;
+}
+
+.title-text img {
+    width: 10%;
+}
+
+.black {
+    color: #000;
+}
+
+.Contact-img {
+    max-width: 370px;
+    opacity: 0.2;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+}
+
+.right {
+    margin-bottom: 40px;
+}
+
+.copyright {
     text-align: center;
-}
-
-form {
-    max-width: 300px;
-    margin: 2em auto;
-    padding: 1em;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label, input {
-    display: block;
-    margin-bottom: 1em;
-}
-
-input {
-    width: 100%;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 0.7em;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
+    font-size: 20px;
+    color: red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
