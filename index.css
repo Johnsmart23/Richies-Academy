@@ -351,8 +351,8 @@ nav ul li a:hover {
 
 .text-content .blue {
     color: red;
-    font-size: 1.5em; /* Adjust font size if needed */
-    margin-bottom: 20px; /* Add space between elements */
+    font-size: 1.5em; 
+    margin-bottom: 20px; 
 }
 
 .text-content button {
@@ -391,7 +391,7 @@ nav ul li a:hover {
 
 .slides li {
     min-width: calc((100% / 4) - 10px); /* Show 3 images at a time with gap */
-    margin: 0 5px; /* Add margin to create gap */
+    margin: 0 5px; 
 }
 
 .slide img {
@@ -554,52 +554,6 @@ nav ul li a:hover {
     }
 
     .slides li {
-        min-width: calc(100% - 10px); /* Show 1 image at a time with gap */
-    }
-}
-
-/* For mobile phones */
-@media (max-width: 480px) {
-    nav img {
-        width: 40px;
-    }
-
-    nav ul li {
-        margin: 0 10px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-
-    #Academy {
-        padding: 20px 10px;
-    }
-
-    .class {
-        text-align: center;
-    }
-
-    .text-content .blue {
-        font-size: 1.2em; /* Adjust font size if needed */
-    }
-
-    .slide {
-        width: 100%;
-        height: auto;
-    }
-
-    .slide img {
-        width: 100%;
-        height: auto;
-    }
-
-    .slides li {
-        min-width: calc(100% - 10px); /* Show 1 image at a time with gap */
-    }
-
-    .prev, .next {
-        padding: 10px;
-        font-size: 14px;
+        min-width: calc(100% - 10px); 
     }
 }
