@@ -447,12 +447,15 @@ nav ul li a:hover {
 
 .title-text {
     margin-left: 130px;
+    z-index: 2;
+    position: relative;
 }
 
 .title-text a {
     text-decoration: none;
     color: blue;
     padding: 5px;
+    font-size: 24px;
 }
 
 .title-text a:hover {
@@ -474,10 +477,21 @@ nav ul li a:hover {
     left: 50%;
     top: 35%;
     transform: translate(-50%,-50%);
+    z-index: 1;
 }
 
 .right {
     margin-bottom: 40px;
+}
+
+.email-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    color: red;
+    text-decoration: underline;
 }
 
 .copyright {
@@ -501,7 +515,7 @@ nav ul li a:hover {
     }
     
     nav ul li a {
-        font-size: 12px;
+        font-size: 14px;
         color: red;
         margin-left: 1px;
     }
@@ -555,5 +569,21 @@ nav ul li a:hover {
 
     .slides li {
         min-width: calc(100% - 10px); 
+    }
+}
+@media (max-width: 768px) {
+
+    .title-text {
+        margin-left: 0;
+        padding-left: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .title-text a {
+        padding: 10px;
+    }
+
+    .Contact-left, .right {
+        margin-bottom: 20px;
     }
 }
