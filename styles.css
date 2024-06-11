@@ -48,6 +48,58 @@ nav ul li a {
 nav ul li a:hover {
     color: blue;
 }
+/*Mentorships*/
+#feedback{
+    width: 100%;
+    padding: 70px;
+}
+.feedback-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;  
+}
+.feedback-col{
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px grey;
+    cursor: pointer;
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    transform: .5s;
+}
+.title-text{
+    padding: 20px;
+    bottom: 10px;
+    color: red;
+}
+.feedback-col p{
+    font-size: 20px;
+}
+.user{
+    display: flex;
+    color: red;
+    align-items: center;
+    margin: 20px 0;
+}
+.user-info small{
+    color: #000;
+}
+.feedback-col:hover{
+    transform: translateY(-7px);
+}
+.user, h5{
+    text-align: center;
+    align-items: center;
+}
+@media screen and (max-width:900px) {
+    .feedback-col{
+        flex-basis: 100%;
+    }
+}
+
 /*Contacts*/
 #Contact {
     padding: 100px 0 20px;
@@ -162,6 +214,9 @@ nav ul li a:hover {
 
     .Contact-left, .right {
         margin-bottom: 20px;
+    }
+    .copyright{
+        font-size: 12px;
     }
 }
 
