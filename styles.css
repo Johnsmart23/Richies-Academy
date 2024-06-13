@@ -462,10 +462,16 @@ nav ul li a:hover {
     }
 
     .card {
-        width: 90%;
+        width: 110%;
+        margin-right: 70px;
         margin-bottom: 20px;
     }
-
+    .card h2 {
+        font-size: 10px;
+    }
+    .card h3 {
+        font-size: 8px;
+    }
     nav ul li {
         margin: 10px 0;
     }
