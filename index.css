@@ -510,7 +510,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
     nav ul {
         display: flex;
         width: 100px;
@@ -522,7 +522,9 @@ nav ul li a:hover {
     nav ul li{
         margin: 0;
     }
-    
+    #Riches{
+        padding-top: 80px;
+    }
     nav ul li a {
         font-size: 12px;
         color: red;
@@ -548,9 +550,13 @@ nav ul li a:hover {
         flex-direction: column;
         height: auto;
     }
+    #Mentorship h1{
+        text-align: center;
+        align-items: center;
+    }
 }
 /* For tablets and smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     #Academy {
         flex-direction: column;
         padding: 40px ;
@@ -580,14 +586,17 @@ nav ul li a:hover {
         min-width: calc(100% - 10px); 
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 700px) {
 
     .title-text {
         margin-left: 0;
         padding-left: 40px;
         margin-bottom: 20px;
     }
-    
+    #container h1{
+        text-align: center;
+        align-items: center;
+    }
     .title-text a {
         padding: 10px;
     }
@@ -598,4 +607,7 @@ nav ul li a:hover {
     .copyright{
         font-size: 12px;
     }
+}
+@media (max-width: 1000px){
+    
 }
