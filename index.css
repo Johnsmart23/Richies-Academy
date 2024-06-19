@@ -579,7 +579,7 @@ nav ul li a:hover {
 
     .slide img {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     .slides li {
@@ -607,7 +607,4 @@ nav ul li a:hover {
     .copyright{
         font-size: 12px;
     }
-}
-@media (max-width: 1000px){
-    
 }
